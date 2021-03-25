@@ -1,4 +1,9 @@
 .header {
     background-color: black;
-    height: 100px;
+    height: 80px;
+}
+.header img {
+    padding: 8px;
+    width: 60px;
+    border-radius: 21px;
 }

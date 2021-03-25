@@ -1,11 +1,12 @@
-import React from 'react'
-import style from './Header.module.css'
+import React from 'react';
+import style from './Header.module.css';
+import Navbar from './Navbar'
 
-const header = () => {
+const Header = () => {
     return (
-            <header className={style.header}>
-                <img src="planets.png"/>
-            </header>
+        <header className={style.header}>
+            <Navbar/>
+        </header>
     )
 }
-export default header;
+export default Header;
