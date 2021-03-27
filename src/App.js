@@ -1,21 +1,19 @@
 import React from 'react';
-import Header from './Components/Header/Header.js';
 import Main from './Components/Main/Main.js';
 import Footer from './Components/Footer/Footer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navibar from "./NComponents/Navbar/Navbar";
 
-import {SolarSystem} from './NComponents/solar-system.js';
+import {SolarSystem} from './NComponents/solarsystem/solar-system.js';
 import {Planets} from './NComponents/planets.js';
 import {Moons} from './NComponents/moons.js';
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import MoreDeets from './NComponents/card/cards.js'
 
 
 function App() {
     return (
         <BrowserRouter>
-            <div className="App">
+            <div>
                 <Navibar/>
                 <Switch>
                     <Route exact path='/solar' component={SolarSystem}/>

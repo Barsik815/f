@@ -5,7 +5,8 @@
     "c c";
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    background: #1F2226;
+    padding: 20px;
+    grid-row-gap: 20px;
 }
 .it {
     grid-area: c;
@@ -14,11 +15,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    flex-wrap: wrap;
     color: white ;
     margin: auto;
     background: #1F2226;
 }
 .it img {
     width: 222px;
+}
+.t {
+    background: #414141;
 }

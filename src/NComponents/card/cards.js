@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import s from'./cards.module.css'
+import s from './cards.module.css'
 import {ListGroup, ListGroupItem} from "react-bootstrap";
 import {cardInfo} from "./cardData";
 
@@ -13,11 +13,11 @@ const MoreDeets = () => {
                         <ListGroupItem className='bg-dark'>{card.title}</ListGroupItem>
                         <ListGroupItem className='bg-dark'>{card.text}</ListGroupItem>
                     </ListGroup>
-            </Card>
-        </div>
+                </Card>
+            </div>
         )
     }
-    return (<div className='grid'> {cardInfo.map(renderCard)}</div>)
+    return (<div className={s.grid}> {cardInfo.map(renderCard)}</div>)
 }
 
 export default MoreDeets
