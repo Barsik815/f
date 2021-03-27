@@ -3,28 +3,29 @@ import Header from './Components/Header/Header.js';
 import Main from './Components/Main/Main.js';
 import Footer from './Components/Footer/Footer.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navibar from "./Components/Header/Navbar";
+import Navibar from "./NComponents/Navbar/Navbar";
 
 import {SolarSystem} from './NComponents/solar-system.js';
 import {Planets} from './NComponents/planets.js';
 import {Moons} from './NComponents/moons.js';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
+import MoreDeets from './NComponents/card/cards.js'
 
 
 function App() {
     return (
-        <div className="App">
-            <Router>
+        <BrowserRouter>
+            <div className="App">
                 <Navibar/>
                 <Switch>
-                    <Route exact path='/' component={SolarSystem}/>
-                    <Route path='/planets' component={Planets}/>
-                    <Route path='/moons' component={Moons}/>
+                    <Route exact path='/solar' component={SolarSystem}/>
+                    <Route exact path='/planets' component={Planets}/>
+                    <Route exact path='/moons' component={Moons}/>
                 </Switch>
-            </Router>
-            <Main/>
-            <Footer/>
-        </div>
+                <Main/>
+                <Footer/>
+            </div>
+        </BrowserRouter>
     );
 }
 

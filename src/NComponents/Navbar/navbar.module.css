@@ -1,0 +1,16 @@
+.bc {
+    background-color: #000
+}
+
+.menuItem {
+    color: #fff
+}
+
+.menuItem:hover {
+    color: #ffac41;
+    text-decoration: none;
+}
+
+.selectedMenuItem {
+    color: #ffac41
+}

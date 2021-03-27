@@ -1,0 +1,24 @@
+.grid {
+    display: grid;
+    grid-template-areas:
+    "c c"
+    "c c";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background: #1F2226;
+}
+.it {
+    grid-area: c;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    color: white ;
+    margin: auto;
+    background: #1F2226;
+}
+.it img {
+    width: 222px;
+}

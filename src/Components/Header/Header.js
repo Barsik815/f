@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Header.module.css';
-import Navbar from './Navbar'
+import Navbar from '../../NComponents/Navbar/Navbar'
 
 const Header = () => {
     return (
