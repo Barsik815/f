@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom'
 import planets from '../../Components/Header/planets.png'
 import s from './navbar.module.css'
 
+
+
 const Navibar = () => {
     return (
         <Navbar collapseOnSelect expand='lg' className={s.bc} variant='dark' >

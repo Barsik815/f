@@ -1,0 +1,26 @@
+.car {
+    background-image: url("bg-f.jpg");
+    background-size: 100%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.carI {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.car img {
+    width: 25%;
+}
+.card {
+    width: 20%;
+    background: none;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+}

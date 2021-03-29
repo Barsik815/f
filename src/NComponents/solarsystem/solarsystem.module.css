@@ -1,6 +1,7 @@
 .a {
     color: white;
     background-image: url("./bg.jpg");
+    background-size: 100%;
 }
 .t {
     padding-top: 32px;
