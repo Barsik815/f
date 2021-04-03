@@ -1,11 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'antd/dist/antd.css';
+import {Tabs} from 'antd';
+
 import MoreDeets from "../card/cards";
 import s from './solarsystem.module.css';
 import Navibar from "../Navbar/Navbar";
-import {Tabs} from 'antd';
-
+import SearchForm from "../SearchForm/SearchForm";
 
 const {TabPane} = Tabs;
 
@@ -21,9 +22,11 @@ export const SolarSystem = () => {
                     <MoreDeets/>
                 </TabPane>
                 <TabPane tab="Dwarf" key="2">
+                    <SearchForm/>
                     <Navibar/>
                 </TabPane>
                 <TabPane tab="Hypothetical" key="3">
+                    <SearchForm/>
                     <Navibar/>
                 </TabPane>
             </Tabs>

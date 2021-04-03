@@ -18,6 +18,12 @@
     color: white ;
     margin: auto;
     background: #1F2226;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+.it:hover {
+    opacity: .5;
+    transition: all ease .5s;
 }
 .it img {
     width: 222px;

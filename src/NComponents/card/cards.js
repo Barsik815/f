@@ -1,13 +1,16 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import s from './cards.module.css'
-import {ListGroup, ListGroupItem} from "react-bootstrap";
-import {cardInfo} from "./cardData";
+import React from "react"
+import Card from "react-bootstrap/Card"
+import {ListGroup, ListGroupItem} from "react-bootstrap"
+import { withRouter } from 'react-router-dom'
 
-const MoreDeets = () => {
+import {cardInfo} from "./cardData"
+import s from './cards.module.css'
+import SearchForm from "../SearchForm/SearchForm"
+
+const MoreDeets = ({ history }) => {
     const renderCard = (card, index) => {
         return (<div>
-                <Card className={s.it} key={index}>
+                <Card className={s.it} key={index} onClick={() => history.push('/object/22')}>
                     <Card.Img alt="Card image" src={card.image}/>
                     <ListGroup>
                         <ListGroupItem className='bg-dark'>{card.title}</ListGroupItem>
@@ -17,8 +20,12 @@ const MoreDeets = () => {
             </div>
         )
     }
-    return (<div className={s.grid}> {cardInfo.map(renderCard)}</div>)
+
+    return (<>
+        <SearchForm/>
+        <div className={s.grid}> {cardInfo.map(renderCard)}</div>
+    </>)
 }
 
-export default MoreDeets
+export default withRouter(MoreDeets)
 
