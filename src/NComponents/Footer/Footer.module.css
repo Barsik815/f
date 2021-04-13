@@ -5,6 +5,10 @@
     padding-bottom: 15px;
 }
 
+.car img {
+    width: 25%;
+}
+
 .carI {
     display: flex;
     flex-direction: row;
@@ -12,14 +16,18 @@
     margin: auto;
 }
 
-.car img {
-    width: 25%;
-}
+
 .card {
     width: 15%;
     margin: auto;
     color: white;
     text-align: center;
+    transition: .5s;
+}
+.card:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: .5s;
 }
 .card img {
     width: 100%;

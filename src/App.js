@@ -8,10 +8,11 @@ import {Things} from './NComponents/Things/Things.js';
 import {Moons} from './NComponents/moons.js';
 import ControlledCarousel from './NComponents/Footer/Footer.js';
 import SpaceObject from "./NComponents/SpaceObject/SpaceObject";
+import s from "./NComponents/solarsystem/solarsystem.module.css";
 
 
 function App() {
-    return (<div>
+    return (<div  className={s.a}>
             <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <div>
                     <Navibar/>
@@ -22,10 +23,9 @@ function App() {
                         <Route exact path='/acm' component={Moons}/>
                         <Route path='/object/:id' component={SpaceObject}/>
                     </Switch>
-
                 </div>
+                <ControlledCarousel/>
             </BrowserRouter>
-            <ControlledCarousel/>
         </div>
     );
 }

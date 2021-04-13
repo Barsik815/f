@@ -2,9 +2,11 @@
     display: grid;
     grid-template-areas:
     "c c"
+    "c c"
+    "c c"
     "c c";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr ;
+    grid-template-columns: 1fr 1fr ;
     padding: 20px;
     grid-row-gap: 20px;
 }

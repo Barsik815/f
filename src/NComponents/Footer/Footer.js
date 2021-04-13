@@ -1,8 +1,9 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import Card from "react-bootstrap/Card";
+
 import s from './Footer.module.css'
 import CardCustom from "./CardCustom";
+
 
 function ControlledCarousel() {
 
@@ -11,29 +12,29 @@ function ControlledCarousel() {
                 <Carousel.Item>
                     <div className={s.carI}>
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Mercury'} />
+                                    text={'Mercury'} idPlanet={1} />
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Venus'} />
+                                    text={'Venus'} idPlanet={2} />
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Earth'} />
+                                    text={'Earth'} idPlanet={3} />
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className={s.carI}>
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Mars'} />
+                                    text={'Mars'} idPlanet={4} />
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Jupiter'} />
+                                    text={'Jupiter'} idPlanet={5} />
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Saturn'} />
+                                    text={'Saturn'} idPlanet={6} />
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className={s.carI}>
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Uranus'} />
+                                    text={'Uranus'} idPlanet={7} />
                         <CardCustom url={'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'}
-                                    text={'Neptune'} />
+                                    text={'Neptune'} idPlanet={8} />
                     </div>
                 </Carousel.Item>
             </Carousel>

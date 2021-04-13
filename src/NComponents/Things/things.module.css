@@ -50,6 +50,7 @@
 }
 
 .table {
+    color: white;
     margin: auto;
     width: 1200px;
     display: grid;
@@ -65,5 +66,6 @@
 }
 
 .t {
+    color: white;
     text-align: center;
 }
