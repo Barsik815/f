@@ -1,20 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import {withRouter} from 'react-router-dom'
 import {useParams} from 'react-router-dom'
-import { Collapse, List } from 'antd'
+import {Collapse, List} from 'antd'
 
 import s from "./SpaceObject.module.css"
-import { dataPlanet } from '../../data/Pdata'
+import {dataPlanet} from '../../data/Pdata'
 
-const { Panel } = Collapse;
+const {Panel} = Collapse;
 
-const datass = [
-    'Racing car sprays burning fuel into crowd.',
-    'Japanese princess to wed commoner.',
-    'Australian walks 100km after outback crash.',
-    'Man charged over missing wedding girl.',
-    'Los Angeles battles huge wildfires.',
-];
 
 const SpaceObject = () => {
     let {id} = useParams();
@@ -27,24 +20,23 @@ const SpaceObject = () => {
             }
         });
     }, [id])
-    
+
     return <div>
         <div className={s.container}>
             <div className={s.image}><img src={data.img} className={s.img} alt={'planet'}/></div>
             <div className={s.shInf}>
-                <p>{data.name}</p>
+                <h2 className={s.planet}>{data.name}</h2>
                 <p>Відстань від Сонця: {data.distance}</p>
                 <p>Екваторіальний діаметр: {data.diameter}</p>
                 <p>Маса: {data.weight}</p>
                 <p>Супутники: {data.amount}</p>
                 <p>Тривалість року: {data.year}</p>
-                <p>Тривалість доби: {data.day}</p>
             </div>
-            <div>{data.description}</div>
         </div>
-        <div>
-            <Collapse collapsible={data.amount === 0 ? "disabled" : "header"}>
-                <Panel header="Moons" key="1">
+        <div className={s.block}><p className={s.description}>{data.description}</p>
+        <div className={s.collapse}>
+            <Collapse collapsible={data.amount === 0 ? "disabled" : "header"} className={s.list}>
+                <Panel header="Супутники" key="1">
                     <List
                         size="small"
                         bordered
@@ -53,7 +45,7 @@ const SpaceObject = () => {
                     />
                 </Panel>
             </Collapse>
-        </div>
+        </div></div>
     </div>;
 }
 

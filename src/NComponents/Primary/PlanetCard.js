@@ -24,7 +24,7 @@ const PlanetCard = ({history}) => {
                     <Card.Img alt="Card image" src={planet.img}/>
                     <ListGroup>
                         <ListGroupItem className='bg-dark'>{planet.name}</ListGroupItem>
-                        <ListGroupItem className='bg-dark'>{planet.description}</ListGroupItem>
+                        <ListGroupItem className='bg-dark'>{planet.ShDescription}</ListGroupItem>
                     </ListGroup>
                 </Card>
             </div>

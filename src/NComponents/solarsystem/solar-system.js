@@ -6,7 +6,6 @@ import {Tabs} from 'antd';
 import PlanetCard from "../Primary/PlanetCard";
 import s from './solarsystem.module.css';
 import Navibar from "../Navbar/Navbar";
-import SearchForm from "../SearchForm/SearchForm";
 import DwarfCard from "../Dwarf/DwarfCards";
 
 const {TabPane} = Tabs;

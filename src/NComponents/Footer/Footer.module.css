@@ -1,34 +1,33 @@
 .car {
-    background-image: url("bg-f.jpg");
+    background-image: url("https://geographical.co.uk/media/k2/items/cache/eb8c0a46c2085216dea7d19f92a60fd7_XL.jpg");
     background-size: 100%;
     margin: auto;
-    padding-bottom: 15px;
-}
-
-.car img {
-    width: 25%;
+    padding: 32px;
 }
 
 .carI {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto;
 }
 
 
 .card {
+    background: rgba(255, 255, 255, 0);
     width: 15%;
     margin: auto;
-    color: white;
     text-align: center;
     transition: .5s;
+    padding-bottom: 32px;
 }
+
 .card:hover {
     cursor: pointer;
     opacity: .5;
     transition: .5s;
 }
-.card img {
-    width: 100%;
+
+.text   {
+    color: white;
 }

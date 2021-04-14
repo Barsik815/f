@@ -3,29 +3,29 @@ export const dataPlanet = [
         id: 1,
         img: 'https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png',
         name: 'Mercury',
-        distance: '57.900.000',
-        diameter: '4.879',
-        weight: '5%',
+        distance: '57 900 000 км',
+        diameter: '4 879 км',
+        weight: '5% від маси Землі',
         amount: 0,
-        year: '88',
-        day: '0',
+        year: '88 земних днів',
+        ShDescription: 'Опис',
         description: "опис - asd" +
             "kdkfsdllfksd",
-        moons: 'first, second, third'
+        moons: ' '
     },
 
     {
         id: 2,
         img: 'https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png',
         name: 'Venus',
-        distance: '57.900.000',
-        diameter: '4.879',
-        weight: '5%',
+        distance: '108 000 000 км',
+        diameter: '12 104 км',
+        weight: '81,5% від маси Землі',
         amount: 0,
-        year: '88',
-        day: '0',
-        description: 'опис',
-        moons: 'first, second, third'
+        year: '225 земних днів',
+        ShDescription: 'Опис',
+        description: 'Similar in size and structure to Earth, Venus has been called Earth\'s twin. These are not identical twins, however – there are radical differences between the two worlds. Venus has a thick, toxic atmosphere filled with carbon dioxide and it’s perpetually shrouded in thick, yellowish clouds of mostly sulfuric acid that trap heat, causing a runaway greenhouse effect. It’s the hottest planet in our solar system, even though Mercury is closer to the Sun. Venus has crushing air pressure at its surface – more than 90 times that of Earth – similar to the pressure you\'d encounter a mile below the ocean on Earth.',
+        moons: ' '
     },
 
     {
@@ -35,11 +35,11 @@ export const dataPlanet = [
         distance: '57.900.000',
         diameter: '4.879',
         weight: '5%',
-        amount: 0,
+        amount: 1,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
-        moons: 'first, second, third'
+        moons: 'Місяць'
     },
 
     {
@@ -49,11 +49,11 @@ export const dataPlanet = [
         distance: '57.900.000',
         diameter: '4.879',
         weight: '5%',
-        amount: 0,
+        amount: 2,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
-        moons: 'first, second, third'
+        moons: 'Деймос, Фобос'
     },
 
     {
@@ -63,9 +63,9 @@ export const dataPlanet = [
         distance: '57.900.000',
         diameter: '4.879',
         weight: '5%',
-        amount: 0,
+        amount: 79,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
         moons: 'first, second, third'
     },
@@ -76,12 +76,12 @@ export const dataPlanet = [
         name: 'Saturn',
         distance: '57.900.000',
         diameter: '4.879',
-        weight: '5%',
-        amount: 1,
-        year: '88',
-        day: '0',
+        weight: '95 мас Землі',
+        amount: 57,
+        year: '29,46 земних років',
+        ShDescription: 'Опис',
         description: 'опис',
-        moons: 'first, second, third'
+        moons: 'Пан, Дафніс, Атлас, Прометей, Пандора, Епіметей, Янус, Егеон, Мімас, Мефона, Анфа, Паллена, Тефія, Телесто, Каліпсо, Діона, Гелена, Полідевк, Рея, Гіперіон, Япет, Ківіок'
     },
 
     {
@@ -91,9 +91,9 @@ export const dataPlanet = [
         distance: '57.900.000',
         diameter: '4.879',
         weight: '5%',
-        amount: 0,
+        amount: 27,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
         moons: 'first, second, third'
     },
@@ -105,10 +105,10 @@ export const dataPlanet = [
         distance: '57.900.000',
         diameter: '4.879',
         weight: '5%',
-        amount: 0,
+        amount: 14,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
-        moons: 'first, second, third'
+        moons: 'Тритон, Нерехда, Наяда, Таласса, Деспіна, Галатея, Лариса, Протей, Галімеда, Псамафа, Сао, Лаомедея, Несо, Гіппокамп'
     },
 ]

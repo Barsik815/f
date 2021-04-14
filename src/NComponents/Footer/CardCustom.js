@@ -5,12 +5,12 @@ import {withRouter} from 'react-router-dom'
 import s from "./Footer.module.css";
 
 const CardCustom = ({ url, text, idPlanet, history }) => {
-    return <Card className={s.card} style={{ backgroundColor: 'rgba(255, 255, 255, 0)' }}
+    return <Card className={s.card}
                  onClick={() => history.push(`/object/${idPlanet}`)}>
         <Card.Img variant="top"
                   src={url} />
         <Card.Body>
-            <Card.Title>{text}</Card.Title>
+            <Card.Title><h4 className={s.text}>{text}</h4></Card.Title>
         </Card.Body>
     </Card>
 };
