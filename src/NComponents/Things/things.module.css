@@ -9,6 +9,11 @@
     padding-right: 30px;
 }
 
+.all    {
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
 .number {
     background-color: #B0CADD;
     width: 60px;
@@ -45,11 +50,8 @@
     border-right: 1px solid #B0CADD;
 }
 
-.di {
-    margin-bottom: 500px;
-}
-
 .table {
+    padding-top: 36px;
     color: white;
     margin: auto;
     width: 1200px;
@@ -67,5 +69,11 @@
 
 .t {
     color: white;
+    text-align: center;
+}
+
+.desc   {
+    padding-left: 25%;
+    padding-right: 25%;
     text-align: center;
 }

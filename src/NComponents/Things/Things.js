@@ -3,19 +3,17 @@ import ThingsCard from "./ThingsCard";
 import s from './things.module.css';
 
 export const Things = () => {
-    return (<div className={s.di}>
+    return (<div className={s.all}>
             <h2 className={s.t}>10 Need-to-Know Things About the Solar System</h2>
 
-            <p>
-                Our planetary system is located in an outer spiral arm of the Milky Way galaxy.
-            </p>
 
-            <p>
+        <p className={s.desc}> Our planetary system is located in an outer spiral arm of the Milky Way galaxy.
+
                 Our solar system consists of our star, the Sun, and everything bound to it by gravity — the planets
                 Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune, dwarf planets such as Pluto, dozens of
                 moons and millions of asteroids, comets and meteoroids. Beyond our own solar system, we have discovered
-                thousands of planetary systems orbiting other stars in the Milky Way.
-            </p>
+                thousands of planetary systems orbiting other stars in the Milky Way.</p>
+
 
             <div className={s.table}>
                 <div>

@@ -1,22 +1,12 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 import Card from "react-bootstrap/Card"
 import {ListGroup, ListGroupItem} from "react-bootstrap"
 import {withRouter} from 'react-router-dom'
 
-import s from './../Primary/cards.module.css'
-import SearchForm from "../SearchForm/SearchForm"
-import { DwarfData } from '../../data/DwarfData'
+import s from '../Primary/cards.module.css'
+import { HypData } from '../../data/HypData'
 
-const DwarfCard = ({history}) => {
-    const [search, setSearch]=useState('');
-    const [searchResults, setSearchResults] = useState([]);
-
-    useEffect(() => {
-        const results = DwarfData.filter(p =>
-            p.name.toLowerCase().includes(search.toLowerCase())
-        );
-        setSearchResults(results);
-    }, [search, setSearch]);
+const Hypo = ({history}) => {
 
     const renderCard = (planet, index) => {
         return (<div>
@@ -32,10 +22,9 @@ const DwarfCard = ({history}) => {
     };
 
     return (<>
-        <SearchForm search={search} setSearch={setSearch} />
-        <div className={s.grid}> {searchResults.map(renderCard)}</div>
+        <div className={s.grid}> {HypData.map(renderCard)}</div>
     </>)
 }
 
-export default withRouter(DwarfCard)
+export default withRouter(Hypo)
 

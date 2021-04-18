@@ -29,17 +29,15 @@
 }
 
 .collapse  {
-    padding-left: 48px;
+    padding-left: 72px;
 }
 
 .block  {
-    background: white;
     padding-bottom: 32px;
 }
 
 .description    {
     font-size: 24px;
-    color: #1F2226;
-    width: 80%;
-    padding-left: 48px;
+    color: #eee;
+    padding: 10vh 72px 0 72px;
 }

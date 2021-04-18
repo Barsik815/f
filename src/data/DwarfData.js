@@ -8,7 +8,7 @@ export const DwarfData = [
         weight: '5%',
         amount: 0,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: "опис - asd" +
             "kdkfsdllfksd",
         moons: 'first, second, third'
@@ -23,7 +23,7 @@ export const DwarfData = [
         weight: '5%',
         amount: 0,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
         moons: 'first, second, third'
     },
@@ -37,7 +37,7 @@ export const DwarfData = [
         weight: '5%',
         amount: 0,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
         moons: 'first, second, third'
     },
@@ -51,7 +51,7 @@ export const DwarfData = [
         weight: '5%',
         amount: 0,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
         moons: 'first, second, third'
     },
@@ -65,7 +65,7 @@ export const DwarfData = [
         weight: '5%',
         amount: 0,
         year: '88',
-        day: '0',
+        ShDescription: 'Опис',
         description: 'опис',
         moons: 'first, second, third'
     },
