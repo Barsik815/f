@@ -16,15 +16,15 @@ function callback(key) {
 
 export const SolarSystem = () => {
     return (<div className={s.d}>
-            <h1 className={s.t}>Planets in our solar system</h1>
+            <h1 className={s.t}>Планети нашої сонячної системи</h1>
             <Tabs defaultActiveKey="1" onChange={callback} centered className={s.tab}>
-                <TabPane tab="Primary" key="1" >
+                <TabPane tab="Головні" key="1" >
                     <PlanetCard/>
                 </TabPane>
-                <TabPane tab="Dwarf" key="2">
+                <TabPane tab="Карлики" key="2">
                     <DwarfCard/>
                 </TabPane>
-                <TabPane tab="Hypothetical" key="3">
+                <TabPane tab="Гіпотетичні" key="3">
                     <Hypo/>
                 </TabPane>
             </Tabs>

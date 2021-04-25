@@ -11,12 +11,11 @@ const Navibar = () => {
             <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
             <Navbar.Collapse id='responsive-navbar-nav'>
                 <Nav className='mr-auto' >
-                    <Nav.Link><NavLink to='/main' className={s.menuItem} activeClassName={s.selectedMenuItem}>Solar
-                        System</NavLink></Nav.Link>
+                    <Nav.Link><NavLink to='/main' className={s.menuItem} activeClassName={s.selectedMenuItem}>Сонячна Система</NavLink></Nav.Link>
                     <Nav.Link><NavLink to='/10things' className={s.menuItem}
-                                       activeClassName={s.selectedMenuItem}>10things</NavLink></Nav.Link>
+                                       activeClassName={s.selectedMenuItem}>10 цікавих фактів</NavLink></Nav.Link>
                     <Nav.Link><NavLink to='/acm' className={s.menuItem}
-                                       activeClassName={s.selectedMenuItem}>acm</NavLink></Nav.Link>
+                                       activeClassName={s.selectedMenuItem}>Астероїди і метеорити</NavLink></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

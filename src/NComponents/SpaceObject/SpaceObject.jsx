@@ -50,12 +50,14 @@ const SpaceObject = () => {
             </div>
         </div>
         <div className={s.block}>
-            <h4 className={s.name}>Розмір та відстань</h4>
+            <h4 className={s.name}>{data.FQuest}</h4>
             <p className={s.description}>{data.Fdescription}</p>
-            <h4 className={s.name}>Орбіта і обертання</h4>
+            <h4 className={s.name}>{data.SQuest}</h4>
             <p className={s.description}>{data.Sdescription}</p>
-            <h4 className={s.name}>Структура</h4>
+            <h4 className={s.name}>{data.THQuest}</h4>
             <p className={s.description}>{data.THdescription}</p>
+            <h4 className={s.name}>{data.FourthQuest}</h4>
+            <p className={s.description}>{data.Fourthdescription}</p>
             <div className={s.collapse}>
                 <Collapse collapsible={data.amount === 0 ? "disabled" : "header"} className={s.list}>
                     <Panel header={data.amount === 0 ? "Немає супутників" : "Супутники"} key="1">

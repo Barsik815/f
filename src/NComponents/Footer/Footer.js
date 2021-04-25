@@ -12,29 +12,29 @@ function ControlledCarousel() {
                 <Carousel.Item>
                     <div className={s.carI}>
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/18_mercury_new.png'}
-                                    text={'Mercury'} idPlanet={1} />
+                                    text={'Меркурій'} idPlanet={1} />
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/27_venus_jg.png'}
-                                    text={'Venus'} idPlanet={2} />
+                                    text={'Венера'} idPlanet={2} />
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/17_earth.png'}
-                                    text={'Earth'} idPlanet={3} />
+                                    text={'Земля'} idPlanet={3} />
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className={s.carI}>
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png'}
-                                    text={'Mars'} idPlanet={4} />
+                                    text={'Марс'} idPlanet={4} />
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/16_jupiter_new.png'}
-                                    text={'Jupiter'} idPlanet={5} />
+                                    text={'Юпітер'} idPlanet={5} />
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/28_saturn.png'}
-                                    text={'Saturn'} idPlanet={6} />
+                                    text={'Сатурн'} idPlanet={6} />
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
                     <div className={s.carI}>
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/29_uranus.png'}
-                                    text={'Uranus'} idPlanet={7} />
+                                    text={'Уран'} idPlanet={7} />
                         <CardCustom url={'https://solarsystem.nasa.gov/system/feature_items/images/30_neptune.png'}
-                                    text={'Neptune'} idPlanet={8} />
+                                    text={'Нептун'} idPlanet={8} />
                     </div>
                 </Carousel.Item>
             </Carousel>
