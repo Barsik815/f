@@ -12,7 +12,8 @@
 }
 .it {
     grid-area: c;
-    width: 75%;
+    width: 82%;
+    height: 185px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +30,11 @@
 }
 .it img {
     width: 222px;
+    background: rgba(14, 13, 13, 1);
+
 }
 .t {
     background: #414141;
 }
+
+

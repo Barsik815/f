@@ -5,8 +5,7 @@
     grid-template-rows:  1fr  ;
     grid-template-columns: 384px 1fr ;
     grid-row-gap: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
     padding-left: 40px;
 }
 .img {
@@ -15,6 +14,7 @@
 }
 
 .shInf {
+    padding-left: 24px;
     grid-area: m;
     width: 100%;
 }
@@ -33,11 +33,19 @@
 }
 
 .block  {
+    padding-top: 32px;
+    padding-right: 24px;
     padding-bottom: 32px;
 }
 
 .description    {
-    font-size: 24px;
+    font-size: 18px;
     color: #eee;
-    padding: 10vh 72px 0 72px;
+    padding-left: 48px;
+}
+
+.name   {
+    color: white;
+    padding-left: 72px;
+    padding-top: 16px;
 }

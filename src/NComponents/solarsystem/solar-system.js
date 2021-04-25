@@ -5,7 +5,6 @@ import {Tabs} from 'antd';
 
 import PlanetCard from "../Primary/PlanetCard";
 import s from './solarsystem.module.css';
-import Navibar from "../Navbar/Navbar";
 import DwarfCard from "../Dwarf/DwarfCards";
 import Hypo from "../Hypothetical/HypCard"
 

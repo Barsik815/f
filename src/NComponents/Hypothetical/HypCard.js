@@ -5,12 +5,13 @@ import {withRouter} from 'react-router-dom'
 
 import s from '../Primary/cards.module.css'
 import { HypData } from '../../data/HypData'
+import {HYP} from "../../constants";
 
 const Hypo = ({history}) => {
 
     const renderCard = (planet, index) => {
         return (<div>
-                <Card className={s.it} key={index} onClick={() => history.push(`/object/${planet.id}`)}>
+                <Card className={s.it} key={index} onClick={() => history.push(`/object/${HYP}/${planet.id}`)}>
                     <Card.Img alt="Card image" src={planet.img}/>
                     <ListGroup>
                         <ListGroupItem className='bg-dark'>{planet.name}</ListGroupItem>
@@ -22,7 +23,7 @@ const Hypo = ({history}) => {
     };
 
     return (<>
-        <div className={s.grid}> {HypData.map(renderCard)}</div>
+        <div className={s.grid} style={{ height: '40vh' }}> {HypData.map(renderCard)}</div>
     </>)
 }
 

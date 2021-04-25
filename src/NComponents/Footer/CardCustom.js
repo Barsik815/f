@@ -6,7 +6,7 @@ import s from "./Footer.module.css";
 
 const CardCustom = ({ url, text, idPlanet, history }) => {
     return <Card className={s.card}
-                 onClick={() => history.push(`/object/${idPlanet}`)}>
+                 onClick={() => history.push(`/object/planet/${idPlanet}`)}>
         <Card.Img variant="top"
                   src={url} />
         <Card.Body>

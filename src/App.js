@@ -21,7 +21,7 @@ function App() {
                         <Route exact path='/main' component={SolarSystem}/>
                         <Route exact path='/10things' component={Things}/>
                         <Route exact path='/acm' component={Acm}/>
-                        <Route path='/object/:id' component={SpaceObject}/>
+                        <Route path='/object/:obj/:id' component={SpaceObject}/>
                     </Switch>
                 </div>
                 <ControlledCarousel/>
