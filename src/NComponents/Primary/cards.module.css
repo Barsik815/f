@@ -37,4 +37,28 @@
     background: #414141;
 }
 
+.asteroid {
+    padding-top: 32px;
+    text-align: center;
+    color: white;
+}
 
+.pica {
+    display: flex;
+    margin: auto;
+    max-width: 600px;
+
+}
+.firstdescription   {
+    text-align: center;
+    font-size: 16px;
+    color: #eee;
+    padding: 0 48px 0 48px;
+}
+
+.description    {
+    padding-top: 24px;
+    font-size: 16px;
+    color: #eee;
+    padding-left: 24px;
+}

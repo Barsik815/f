@@ -42,11 +42,11 @@ const SpaceObject = () => {
             <div className={s.image}><img src={data.img} className={s.img} alt={'planet'}/></div>
             <div className={s.shInf}>
                 <h2 className={s.planet}>{data.name}</h2>
-                <p>Відстань від Сонця: {data.distance}</p>
-                <p>Екваторіальний діаметр: {data.diameter}</p>
-                <p>Маса: {data.weight}</p>
-                <p>Супутники: {data.amount}</p>
-                <p>Тривалість року: {data.year}</p>
+                <p>{data.distance}</p>
+                <p>{data.diameter}</p>
+                <p>{data.weight}</p>
+                <p>{data.amount}</p>
+                <p>{data.year}</p>
             </div>
         </div>
         <div className={s.block}>
@@ -58,9 +58,9 @@ const SpaceObject = () => {
             <p className={s.description}>{data.THdescription}</p>
             <h4 className={s.name}>{data.FourthQuest}</h4>
             <p className={s.description}>{data.Fourthdescription}</p>
-            <div className={s.collapse}>
-                <Collapse collapsible={data.amount === 0 ? "disabled" : "header"} className={s.list}>
-                    <Panel header={data.amount === 0 ? "Немає супутників" : "Супутники"} key="1">
+            {obj !== 'dwarf' && <div className={s.collapse}>
+                <Collapse collapsible={data.satellites === 0 ? "disabled" : "header"} className={s.list}>
+                    <Panel header={data.satellites === 0 ? "Немає супутників" : "Супутники"} key="1">
                         <List
                             size="small"
                             bordered
@@ -69,7 +69,7 @@ const SpaceObject = () => {
                         />
                     </Panel>
                 </Collapse>
-            </div>
+            </div>}
         </div>
     </div>;
 }
